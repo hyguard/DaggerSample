@@ -1,2 +1,5 @@
 rootProject.name='DaggerSample'
 include ':app'
+include ':app2'
+include ':commonModule:base'
+include ':app1SubModule:subApp1'

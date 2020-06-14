@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.subapp1">
+
+    <application>
+        <activity
+            android:name=".SubApp1Activity"
+            android:label="SubApp1"></activity>
+    </application>
+</manifest>

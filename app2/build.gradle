@@ -7,7 +7,7 @@ android {
     buildToolsVersion globalConfiguration["androidBuildToolsVersion"]
 
     defaultConfig {
-        applicationId "com.example.daggersample"
+        applicationId "com.example.app2"
         minSdkVersion globalConfiguration["androidMinSdkVersion"]
         targetSdkVersion globalConfiguration["androidTargetSdkVersion"]
         versionCode 1
@@ -33,7 +33,6 @@ android {
 
 dependencies {
     implementation project(':commonModule:base')
-    implementation project(':app1SubModule:subApp1')
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
