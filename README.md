@@ -11,6 +11,6 @@
 - :app1SubModule:subApp1
 
 ## app2 사용 sub 모듈
-- :app2SubModule:subApp4
-- :app2SubModule:subApp4
+- :app2SubModule:subApp2
+- :app2SubModule:subApp3
 - :app2SubModule:subApp4
