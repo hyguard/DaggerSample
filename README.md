@@ -1,8 +1,8 @@
 # DaggerSample
 
 ## 앱 multi build 구성
-- app (ex IamSchool)
-- app2 (ex IamStudent)
+- app
+- app2
 
 ## 공통 사용 모듈
 - :commonModule:base
