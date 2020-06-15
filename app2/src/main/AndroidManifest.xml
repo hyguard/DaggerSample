@@ -3,6 +3,7 @@
     package="com.example.app2">
 
     <application
+        android:name=".App2Application"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"

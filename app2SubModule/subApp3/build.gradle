@@ -1,4 +1,4 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     def globalConfiguration = rootProject.extensions.getByName("ext")
@@ -7,13 +7,13 @@ android {
     buildToolsVersion globalConfiguration["androidBuildToolsVersion"]
 
     defaultConfig {
-        applicationId "com.example.app2"
         minSdkVersion globalConfiguration["androidMinSdkVersion"]
         targetSdkVersion globalConfiguration["androidTargetSdkVersion"]
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner globalConfiguration["testInstrumentationRunner"]
+        consumerProguardFiles 'consumer-rules.pro'
     }
 
     buildTypes {
@@ -22,6 +22,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility = 1.8
         targetCompatibility = 1.8
@@ -32,19 +33,14 @@ android {
 }
 
 dependencies {
-    implementation project(':commonModule:base')
-    implementation project(':app2SubModule:subApp2')
-    implementation project(':app2SubModule:subApp3')
-    implementation project(':app2SubModule:subApp4')
-
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
-    implementation appDependencies.appcompat
-    implementation appDependencies.constraintlayout
 
     testImplementation testDependencies.junit
     androidTestImplementation testDependencies.junitAndroid
     androidTestImplementation testDependencies.espressoCore
+
+    implementation appDependencies.appcompat
+    implementation appDependencies.constraintlayout
 
     implementation appDependencies.dagger
     annotationProcessor appDependencies.daggerCompiler

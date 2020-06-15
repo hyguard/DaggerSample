@@ -1,9 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.subapp1">
+    package="com.example.subapp2">
 
     <application>
         <activity
-            android:name=".SubApp1Activity"
-            android:label="SubApp1" />
+            android:name=".SubApp2Activity"
+            android:label="SubApp2" />
     </application>
 </manifest>

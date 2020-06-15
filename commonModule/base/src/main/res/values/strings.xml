@@ -2,4 +2,7 @@
 <resources>
     <string name="common_string">common string</string>
     <string name="hello_world">hello world</string>
+
+    <string name="qualifier_name_1">qualifier_name_1 - text1</string>
+    <string name="qualifier_name_2">qualifier_name_2 - text2</string>
 </resources>
